@@ -30,16 +30,4 @@ setValues()
 function getOperation(){
     
 }
-
-const setValues=()=>{
-    let rand1 = getRandomNum()
-    let rand2 = getRandomNum()
-    if(rand2>rand1){
-        arg1.textContent=rand2;
-        arg2.textContent = rand1;
-    }else{
-        arg1.textContent=rand1;
-        arg2.textContent=rand2;
-    }
-}
-setValues()
+function add()
