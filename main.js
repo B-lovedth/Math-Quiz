@@ -20,11 +20,15 @@ let rand1 = Math.floor(Math.random() * 999);
     num2 = rand2;
   }
 
-const symbols =['*','+','-','/'];
+function add() {}
 
-const getRandomNum= ()=>{
-    let randInt = Math.floor(Math.random()*99)
-    return randInt;
+const setValues = () => {
+  arg1.textContent = num1;
+  arg2.textContent = num2;
+};
+setValues()
+function getOperation(){
+    
 }
 
 const setValues=()=>{
