@@ -21,12 +21,22 @@ if (rand1 < rand2) {
 }
 arg1.textContent=num1;
 arg2.textContent=num2;
-console.log(arg1,arg2)
+
 function add(){
   op.innerHTML=`<i class="fa-solid fa-plus"></i>`
-  
+
 }
 
 function getOperation(){
-    
+    switch (randNum) {
+      case 1:
+        subtract()
+        break;
+      case 2:
+        multiply()
+        break;
+      default:
+        add()
+        break;
+    }
 }
