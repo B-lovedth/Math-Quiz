@@ -20,11 +20,8 @@ if (rand1 < rand2) {
   num1 = rand1;
   num2 = rand2[Math.floor(Math.random() * rand2.length)];
 }
-arg1.textContent=num1;
-arg2.textContent=num2;
-
-function add(){
-  op.innerHTML=`<i class="fa-solid fa-plus"></i>`
+arg1.textContent = num1;
+arg2.textContent = num2;
 
 }
 
