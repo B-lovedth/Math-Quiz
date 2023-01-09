@@ -10,8 +10,9 @@ const arg1 = document.getElementById("arg-one"),
   resultEl = document.getElementById("answer");
 let randNum;
 let rand1 = Math.floor(Math.random() * 999);
-let rand2 = Math.floor(Math.random() * 999);
-let num1, num2;
+let rand2 = [11, rand1];
+let num1, num2, result;
+
 if (rand1 < rand2) {
     num1 = rand2;
     num2 = rand1;
