@@ -17,8 +17,8 @@ if (rand1 < rand2) {
   num1 = rand2[Math.floor(Math.random() * rand2.length)];
   num2 = rand1;
 } else {
-    num1 = rand1;
-    num2 = rand2;
+  num1 = rand1;
+  num2 = rand2[Math.floor(Math.random() * rand2.length)];
 }
 arg1.textContent=num1;
 arg2.textContent=num2;
