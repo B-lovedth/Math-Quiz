@@ -4,10 +4,11 @@ const arg1 = document.getElementById("arg-one"),
   label1 = document.getElementById("label1"),
   label2 = document.getElementById("label2"),
   label3 = document.getElementById("label3"),
-  opt1 = document.getElementById("option-one"),
-  opt2 = document.getElementById("option-two"),
-  opt3 = document.getElementById("option-three");
-let randNum = Math.floor(Math.random() * 4);
+  countdown = document.getElementById("countdown")
+  confirmIcon = document.getElementById("confirm-icon"),
+  confirmText = document.getElementById("confirm-text"),
+  resultEl = document.getElementById("answer");
+let randNum;
 let rand1 = Math.floor(Math.random() * 999);
 let rand2 = Math.floor(Math.random() * 999);
 let num1, num2;
