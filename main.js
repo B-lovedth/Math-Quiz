@@ -23,6 +23,17 @@ if (rand1 < rand2) {
 arg1.textContent = num1;
 arg2.textContent = num2;
 
+function add() {
+  op.innerHTML = `<i class="fa-solid fa-plus">+</i>`;
+  result = num1 + num2;
+}
+function multiply() {
+  op.innerHTML = `<i class="fa-solid fa-xmark">*</i>`;
+  result = num1 * num2;
+}
+function subtract() {
+  op.innerHTML = `<i class="fa-solid fa-minus">-</i>`;
+  result = num1 - num2;
 }
 
 function getOperation(){
