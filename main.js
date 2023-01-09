@@ -50,3 +50,15 @@ function getOperation() {
       break;
   }
 }
+getOperation();
+
+resultEl.oninput = () => {
+  console.log(result);
+  console.log(resultEl.value);
+
+  if (result === +resultEl.value) {
+    console.log("correct");
+  } else {
+    console.log("wrong");
+  }
+};
