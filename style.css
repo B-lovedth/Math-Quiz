@@ -48,6 +48,7 @@ body{
 }
 .wrapper .question{
     font-size: 4rem;
+    display: flex;
     line-height: 3.5rem;
     background: palevioletred;
     padding: 1rem;
@@ -55,6 +56,7 @@ body{
     text-shadow: 4px 3px #996677;
     border-radius: 0.8rem;
     box-shadow: 0 0 5px 1px #000000;
+    align-items: center;
 }
 .answer{
     margin-top:1rem;
