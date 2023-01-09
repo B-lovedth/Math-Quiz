@@ -36,16 +36,17 @@ function subtract() {
   result = num1 - num2;
 }
 
-function getOperation(){
-    switch (randNum) {
-      case 1:
-        subtract()
-        break;
-      case 2:
-        multiply()
-        break;
-      default:
-        add()
-        break;
-    }
+function getOperation() {
+  randNum = Math.floor(Math.random() * 4);
+  switch (randNum) {
+    case 1:
+      subtract();
+      break;
+    case 2:
+      multiply();
+      break;
+    default:
+      add();
+      break;
+  }
 }
