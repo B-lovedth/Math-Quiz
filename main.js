@@ -4,14 +4,18 @@ const arg1 = document.getElementById("arg-one"),
   label1 = document.getElementById("label1"),
   label2 = document.getElementById("label2"),
   label3 = document.getElementById("label3"),
-  countdown = document.getElementById("countdown")
+  countdown = document.getElementById("countdown"),
   confirmIcon = document.getElementById("confirm-icon"),
   confirmText = document.getElementById("confirm-text"),
-  resultEl = document.getElementById("answer");
-let randNum;
-let rand1 = Math.floor(Math.random() * 999);
-let rand2 = [11, rand1];
-let num1, num2, result;
+  correct = document.getElementById("correct"),
+  wrong = document.getElementById("wrong"),
+  Qcount = document.getElementById("question-count"),
+  resultEl = document.getElementById("answer"),
+  confirmView=document.getElementById("confirm")
+let counter = 0;
+let correctCount = 0,
+  wrongCount = 0;
+// html elements////
 
 if (rand1 < rand2) {
   num1 = rand2[Math.floor(Math.random() * rand2.length)];
