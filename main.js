@@ -35,25 +35,38 @@ const main = () => {
   arg1.textContent = num1;
   arg2.textContent = num2;
 
-function getOperation() {
-  randNum = Math.floor(Math.random() * 4);
-  switch (randNum) {
-    case 1:
-      subtract();
-      break;
-    case 2:
-      multiply();
-      break;
-    default:
-      add();
-      break;
+  function add() {
+    op.innerHTML = `<i class="fa-solid fa-plus">+</i>`;
+    result = num1 + num2;
+  }
+  function multiply() {
+    op.innerHTML = `<i class="fa-solid fa-xmark">*</i>`;
+    result = num1 * num2;
+  }
+  function subtract() {
+    op.innerHTML = `<i class="fa-solid fa-minus">-</i>`;
+    result = num1 - num2;
   }
 }
 getOperation();
 
-resultEl.oninput = () => {
-  console.log(result);
-  console.log(resultEl.value);
+  function getOperation() {
+    randNum = Math.floor(Math.random() * 4);
+    switch (randNum) {
+      case 1:
+        subtract();
+        break;
+      case 2:
+        multiply();
+        break;
+      default:
+        add();
+        break;
+    }
+  }
+  getOperation();
+  counter++;
+  Qcount.textContent = counter;
 
   if (result === +resultEl.value) {
     console.log("correct");
