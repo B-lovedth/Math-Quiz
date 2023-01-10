@@ -15,9 +15,7 @@ const arg1 = document.getElementById("arg-one"),
   mainView = document.getElementById("main"),
   restartBtn = document.getElementById('restart'),
   confirmView=document.getElementById("confirm");
-let counter = 0;
-let correctCount = 0,
-  wrongCount = 0;
+
 // html elements////
 let timeInSec = 0
 restartBtn.onclick=()=>{
