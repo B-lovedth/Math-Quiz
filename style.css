@@ -50,11 +50,14 @@ body{
     z-index:-1;
 }
 .main.view{
-    z-index:2;
+    z-index:2 !important;
 }
 .wrapper .question{
     font-size: 4rem;
     display: flex;
+    width:70%;
+    justify-content: space-between;
+    text-align:center;
     line-height: 3.5rem;
     background: palevioletred;
     padding: 1rem;
@@ -64,11 +67,17 @@ body{
     box-shadow: 0 0 5px 1px #000000;
     align-items: center;
 }
-#confirm{
-    position:absolute;
-    z-index:-1;
+.confirm{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-#confirm#view{
+.confirm.view{
     z-index:2;
 }
 .answer{
