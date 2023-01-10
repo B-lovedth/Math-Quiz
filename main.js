@@ -28,6 +28,10 @@ restartBtn.onclick=()=>{
   main();
 }
 const main = () => {
+  if(!mainView.classList.contains('view')){
+    mainView.classList.add('view')
+    confirmView.classList.remove('view')
+  }
   //main function
   let randNum;
   let rand1 = Math.floor(Math.random() * 999);
