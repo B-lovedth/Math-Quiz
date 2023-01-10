@@ -88,4 +88,38 @@ getOperation();
     finalScore.textContent = `You got ${correctCount} out of 5 questions`
     confirmText.textContent = `You spent ${timeInSec} seconds`
   }
+
+  let myCountdown = setInterval(() => {
+    if (counter > 5) {
+      switchView();
+      clearInterval(myCountdown);
+      clearInterval(timespent)
+    } else {
+      countdownCount--;
+      countdown.textContent = countdownCount;
+      if (countdownCount < 1) {
+        clearInterval(myCountdown);
+        wrongCount++;
+        wrong.textContent = wrongCount;
+        main();
+      }
+    }
+  }, 1000);
+
+  resultEl.oninput = () => {
+    //input eventHandler
+    console.log(result);
+    console.log(resultEl.value);
+    if (result === +resultEl.value) {
+      //resets question and counter on input of correct value
+      correctCount++;
+      correct.textContent = correctCount;
+      console.log("correctcount: " + correctCount);
+      clearInterval(myCountdown);
+      main();
+      resultEl.value = "";
+    } else {
+      console.log("wrongcount: " + wrongCount);
+    }
+  };
 };
