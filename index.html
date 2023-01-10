@@ -19,17 +19,24 @@
   </head>
   <body>
     <div class="container">
-        <div class="wrapper">
-            <div class="main">
-            <div class="question">
-                <span id="arg-one"></span>
-                <span id="op">*</span>
-                <span id="arg-two"></span>
-                <p></p>
-            </div>
-            <div class="answer">
-                <input type="number" name="answer" id="answer">
-            </div>
+      <div class="wrapper">
+        <div class="main">
+        <p id="countdown"></p>
+          <div class="question">
+            <span id="arg-one"></span>
+            <span id="op"></span>
+            <span id="arg-two"></span>
+            <p></p>
+          </div>
+          <div class="answer">
+            <input type="number" name="answer" id="answer" />
+          </div>
+          <div>
+            correct: <span id="correct">0</span> wrong:
+            <span id="wrong">0</span>
+          <p id="question-count"></p>
+
+          </div>
         </div>
         <div class="confirm">
             <p id="countdown"></p>
