@@ -20,11 +20,14 @@ let correctCount = 0,
   wrongCount = 0;
 // html elements////
 let timeInSec = 0
-let timespent = setInterval(()=>{
-    timeInSec++ // counts time in seconds
-},1000)
 restartBtn.onclick=()=>{
-  counter=0,correctCount=0,timeInSec=0,wrongCount=0,correct.textContent=0,wrong.textContent=0
+  counter=0
+  correctCount=0
+  timeInSec=0
+  wrongCount=0
+  correct.textContent=0
+  wrong.textContent=0
+  console.log(timeInSec)
   main();
 }
 const main = () => {
