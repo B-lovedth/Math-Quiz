@@ -16,6 +16,7 @@ body{
     height: 100vh;
 }
 .wrapper{
+    position:relative;
     background:#fff;
     height: 25rem;
     width: 25rem;
@@ -45,6 +46,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position:absolute;
+    z-index:-1;
+}
+.main.view{
+    z-index:2;
 }
 .wrapper .question{
     font-size: 4rem;
@@ -57,6 +63,13 @@ body{
     border-radius: 0.8rem;
     box-shadow: 0 0 5px 1px #000000;
     align-items: center;
+}
+#confirm{
+    position:absolute;
+    z-index:-1;
+}
+#confirm#view{
+    z-index:2;
 }
 .answer{
     margin-top:1rem;
