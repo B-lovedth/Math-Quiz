@@ -96,3 +96,46 @@ body{
     text-align: center;
     color:#555;
 }
+.bottom{
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+.bottom i {
+    display: flex;
+}
+p#question-count {
+    font-size: 2rem;
+    font-weight: 700;
+}
+#countdown {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: palevioletred;
+    width: 2rem;
+    height: 2rem;
+    border-radius:50%;
+    font-size:1.5rem;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+button#restart {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: palevioletred;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 2px 1px #6c6c6c;
+    cursor: pointer;
+    transition:0.3s ease-in-out
+}
+button#restart:active{
+    scale:0.8;
+}
