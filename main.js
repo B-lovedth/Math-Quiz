@@ -43,7 +43,8 @@ const main = () => {
   let rand1 = Math.floor(Math.random() * 999);
   let rand2 = [11, rand1];
   let num1, num2, result;
-  let countdownCount = 20;
+  let countdownCount = 10;
+  
 
   if (rand1 < rand2) {
     num1 = rand2[Math.floor(Math.random() * rand2.length)];
@@ -56,19 +57,17 @@ const main = () => {
   arg2.textContent = num2;
 
   function add() {
-    op.innerHTML = `<i class="fa-solid fa-plus">+</i>`;
+    op.innerHTML = `<i class="fa-solid fa-plus"></i>`;
     result = num1 + num2;
   }
   function multiply() {
-    op.innerHTML = `<i class="fa-solid fa-xmark">*</i>`;
+    op.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
     result = num1 * num2;
   }
   function subtract() {
     op.innerHTML = `<i class="fa-solid fa-minus"></i>`;
     result = num1 - num2;
   }
-}
-getOperation();
 
   function getOperation() {
     randNum = Math.floor(Math.random() * 4);
@@ -98,7 +97,6 @@ getOperation();
     if (counter > 5) {
       switchView();
       clearInterval(myCountdown);
-      clearInterval(timespent)
     } else {
       countdownCount--;
       countdown.textContent = countdownCount;
@@ -128,3 +126,4 @@ getOperation();
     }
   };
 };
+main();
