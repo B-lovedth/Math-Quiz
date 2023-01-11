@@ -64,7 +64,7 @@ const main = () => {
     result = num1 * num2;
   }
   function subtract() {
-    op.innerHTML = `<i class="fa-solid fa-minus">-</i>`;
+    op.innerHTML = `<i class="fa-solid fa-minus"></i>`;
     result = num1 - num2;
   }
 }
