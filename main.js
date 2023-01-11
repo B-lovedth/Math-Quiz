@@ -91,8 +91,7 @@ getOperation();
   const switchView=()=>{
     confirmView.classList.add('view')
     mainView.classList.remove('view')
-    finalScore.textContent = `You got ${correctCount} out of 5 questions`
-    confirmText.textContent = `You spent ${timeInSec} seconds`
+    finalScore.textContent = `You got ${correctCount} out of 5 questions` 
   }
 
   let myCountdown = setInterval(() => {
