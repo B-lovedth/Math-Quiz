@@ -17,7 +17,10 @@ const arg1 = document.getElementById("arg-one"),
   confirmView=document.getElementById("confirm");
 
 // html elements////
-let timeInSec = 0
+let counter = 0;
+let correctCount = 0, wrongCount = 0;
+
+
 restartBtn.onclick=()=>{
   counter=0
   correctCount=0
@@ -28,6 +31,8 @@ restartBtn.onclick=()=>{
   console.log(timeInSec)
   main();
 }
+
+
 const main = () => {
   if(!mainView.classList.contains('view')){
     mainView.classList.add('view')
